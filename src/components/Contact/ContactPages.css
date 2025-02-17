@@ -1,0 +1,292 @@
+.contact-page-container {
+    width: 100%;
+    background-color: #111;
+    padding: 50px 0;
+}
+
+/* Seção Hero */
+.contact-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-content {
+    max-width: 50%;
+    color: white;
+}
+
+.contact-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.contact-content p {
+    font-size: 18px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    background: #222;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.breadcrumb span {
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.breadcrumb .active {
+    color: #FEB300;
+}
+
+/* Imagem Hero */
+.contact-image {
+    max-width: 45%;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Seção de Informações de Contato */
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-info h3 {
+    color: #FEB300;
+    font-size: 20px;
+}
+
+.contact-info h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Grid de Contato */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-card {
+    background: #222;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    color: white;
+    border-bottom: 4px solid #FEB300;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.3);
+}
+
+.contact-card img {
+    width: 55px;
+    margin-bottom: 15px;
+}
+
+.contact-card h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 18px;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+/* Formulário de Contato */
+.contact-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 40px;
+    background: #222;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+    width: 100%;
+    padding: 50px;
+    text-align: left;
+}
+
+.contact-form h3 {
+    color: #FEB300;
+    font-size: 22px;
+}
+
+.contact-form h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-container label {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-container input, 
+.input-container textarea {
+    padding: 14px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input-container input:focus, 
+.input-container textarea:focus {
+    border-color: #FEB300;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Botão */
+.send-btn {
+    background: #FEB300;
+    color: black;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    width: fit-content;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover do botão Send Now */
+.send-btn:hover {
+    background: #ffcc00;
+    transform: scale(1.08);
+    box-shadow: 0px 5px 20px rgba(255, 204, 0, 0.5);
+}
+
+.send-btn:active {
+    transform: scale(0.96);
+}
+
+.send-btn span {
+    font-size: 24px;
+}
+
+/* Seção do Mapa */
+.map-container {
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .contact-form-container {
+        max-width: 90%;
+        padding: 40px;
+    }
+
+    .contact-form {
+        padding: 40px;
+    }
+
+    .contact-content, .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-grid {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contact-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero, .contact-grid, .contact-form-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-content, .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+
+    .contact-image, .contact-form-image {
+        max-width: 90%;
+    }
+
+    .contact-grid {
+        gap: 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+        margin: auto;
+    }
+}

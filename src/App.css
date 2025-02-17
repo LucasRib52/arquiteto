@@ -1,0 +1,7 @@
+/* Remove a rolagem horizontal */
+html, body {
+  overflow-x: hidden; /* Impede a rolagem horizontal */
+  max-width: 100vw; /* Garante que nenhum elemento ultrapasse a largura da tela */
+  margin: 0;
+  padding: 0;
+}

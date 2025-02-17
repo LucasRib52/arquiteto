@@ -1,0 +1,117 @@
+.services-page-container {
+    width: 100%;
+    background-color: #111;
+    padding: 50px 0;
+}
+
+/* Seção Hero */
+.services-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    gap: 40px; /* Espaço entre os elementos */
+}
+
+.services-content {
+    max-width: 50%;
+    color: white;
+}
+
+.services-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    background: #222;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.breadcrumb-item {
+    color: white;
+    font-size: 14px;
+}
+
+.breadcrumb-separator {
+    color: #aaa;
+    margin: 0 5px;
+}
+
+.breadcrumb-active {
+    color: #FEB300;
+}
+
+/* Imagem */
+.services-image {
+    max-width: 45%;
+}
+
+.services-image img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* ✅ Responsividade */
+@media (max-width: 1024px) {
+    .services-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .services-content {
+        max-width: 100%;
+    }
+
+    .services-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 30px 15px;
+    }
+
+    .services-content h1 {
+        font-size: 42px;
+    }
+
+    .services-content p {
+        font-size: 16px;
+    }
+
+    .services-image {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-content h1 {
+        font-size: 36px;
+    }
+
+    .services-content p {
+        font-size: 14px;
+    }
+
+    .services-image {
+        max-width: 100%;
+    }
+}

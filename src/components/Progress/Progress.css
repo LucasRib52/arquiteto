@@ -1,0 +1,137 @@
+/* Seção principal */
+.progress-section {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+/* Título e subtítulo */
+.progress-header .progress-subtitle {
+  color: #facc15;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.progress-header .progress-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Container das etapas */
+.progress-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Cartão de progresso */
+.progress-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 320px;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 4px solid transparent;
+  transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.progress-card:hover {
+  border-color: #facc15;
+  transform: translateY(-10px);
+}
+
+/* Ícone dentro do card */
+/* Ícone dentro do card */
+.progress-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  opacity: 0.4; /* Deixa mais visível */
+  filter: brightness(1.5) contrast(1.2); /* Aumenta o brilho e o contraste */
+  transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.progress-card:hover .progress-icon {
+  opacity: 0.6; /* Mais visível no hover */
+  filter: brightness(2) contrast(1.5); /* Mais branco no hover */
+}
+
+
+.progress-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Número grande */
+.progress-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #facc15;
+  margin-bottom: 1rem;
+}
+
+/* Título */
+.progress-title-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Descrição */
+.progress-description {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .progress-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .progress-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .progress-header .progress-title {
+    font-size: 2rem;
+  }
+
+  .progress-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .progress-number {
+    font-size: 2rem;
+  }
+
+  .progress-title-text {
+    font-size: 1.1rem;
+  }
+
+  .progress-description {
+    font-size: 0.85rem;
+  }
+
+  .progress-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

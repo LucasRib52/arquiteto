@@ -1,0 +1,141 @@
+    /* Seção Principal */
+    .about-section {
+        background-color: #0d0d0d;
+        background-image: url("/src/assets/pattern-bg.png"); /* Fundo com textura */
+        background-size: cover;
+        color: #ffffff;
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Container */
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
+        gap: 2rem;
+    }
+    
+    /* Imagens */
+    .about-image-left,
+    .about-image-right {
+        flex: 1;
+        max-width: 450px;
+        position: relative;
+    }
+    
+    .about-image-left img,
+    .about-image-right img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+    /* Badge circular */
+    .about-badge {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        background-color: #facc15;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        animation: rotateBadge 6s linear infinite; /* Animação de rotação */
+    }
+    
+    /* Animação de rotação */
+    @keyframes rotateBadge {
+        0% {
+        transform: rotate(0deg);
+        }
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+    
+    /* Badge interna */
+    .badge-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+    }
+    
+    .badge-inner img {
+        width: 50px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    
+    /* Conteúdo */
+    .about-content {
+        flex: 1;
+        max-width: 500px;
+        text-align: left;
+    }
+    
+    .about-subtitle {
+        color: #facc15;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+    
+    .about-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+    
+    .about-highlight {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: #facc15;
+        margin-top: 1rem;
+    }
+    
+    .highlight-bar {
+        width: 40px;
+        height: 3px;
+        background-color: #facc15;
+        margin-right: 10px;
+    }
+    
+    /* Descrição */
+    .about-description {
+        color: #b3b3b3;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+    /* Botão Read More */
+    .about-button {
+        display: inline-block;
+        color: #facc15;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border: 2px solid #facc15;
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .about-button:hover {
+        background-color: #facc15;
+        color: #0d0d0d;
+    }
+    

@@ -1,0 +1,203 @@
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0d0d0d;
+  color: white;
+  padding: 80px 100px;
+  position: relative;
+  gap: 50px;
+}
+
+/* Ajuste da largura máxima para melhor adaptação */
+.portfolio-content {
+  max-width: 500px;
+}
+
+/* Responsável por alinhar os números e o "+" */
+.years-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.portfolio h1 {
+  font-size: 90px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.number {
+  color: #feb300;
+  font-size: 100px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.plus {
+  color: #feb300;
+  font-size: 50px;
+  margin-left: 5px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.description {
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+/* Botão de "Discover More" */
+.discover-btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #feb300;
+  text-decoration: none;
+  border: 2px solid #feb300;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.discover-btn:hover {
+  background: #feb300;
+  color: #0d0d0d;
+  transform: scale(1.05);
+}
+
+/* Ajuste da imagem */
+.portfolio-image {
+  position: relative;
+}
+
+.portfolio-image img {
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-image img:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 RESPONSIVIDADE 🔥 */
+
+/* ✅ Tablets e telas menores */
+@media (max-width: 1024px) {
+  .portfolio {
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 50px;
+  }
+
+  .portfolio-content {
+      max-width: 100%;
+  }
+
+  .portfolio h1 {
+      font-size: 70px;
+  }
+
+  .number {
+      font-size: 80px;
+  }
+
+  .plus {
+      font-size: 40px;
+  }
+
+  .subtitle {
+      font-size: 22px;
+  }
+
+  .description {
+      font-size: 16px;
+  }
+
+  .portfolio-image img {
+      width: 100%;
+      max-width: 400px;
+  }
+}
+
+/* ✅ Celulares */
+@media (max-width: 768px) {
+  .portfolio {
+      padding: 50px 30px;
+  }
+
+  .portfolio h1 {
+      font-size: 50px;
+  }
+
+  .number {
+      font-size: 60px;
+  }
+
+  .plus {
+      font-size: 30px;
+  }
+
+  .subtitle {
+      font-size: 20px;
+  }
+
+  .description {
+      font-size: 14px;
+  }
+
+  .discover-btn {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+
+  .portfolio-image img {
+      max-width: 300px;
+  }
+}
+
+/* ✅ Celulares pequenos */
+@media (max-width: 480px) {
+  .portfolio {
+      padding: 40px 20px;
+  }
+
+  .portfolio h1 {
+      font-size: 40px;
+  }
+
+  .number {
+      font-size: 50px;
+  }
+
+  .plus {
+      font-size: 25px;
+  }
+
+  .subtitle {
+      font-size: 18px;
+  }
+
+  .description {
+      font-size: 14px;
+  }
+
+  .discover-btn {
+      font-size: 14px;
+      padding: 6px 14px;
+  }
+
+  .portfolio-image img {
+      max-width: 250px;
+  }
+}

@@ -1,0 +1,252 @@
+.about-page-container {
+    width: 100%;
+    background-color: #111;
+    padding: 50px 0;
+}
+
+/* Seção Hero */
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    gap: 40px; /* Adiciona espaço entre os elementos */
+}
+
+.about-content {
+    max-width: 50%;
+    color: white;
+}
+
+.about-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.breadcrumb span {
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.breadcrumb .active {
+    color: #FEB300;
+}
+
+/* Imagem Hero */
+.about-image {
+    max-width: 45%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Seção Sobre a Empresa */
+.about-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    color: white;
+}
+
+.about-images {
+    position: relative;
+    width: 45%;
+}
+
+.image-main {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h3 {
+    color: #FEB300;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+/* Estatísticas */
+.about-stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.stat {
+    text-align: center;
+    width: 150px;
+}
+
+/* Ajustando a rotação para que o círculo fique corretamente alinhado */
+.progress-ring {
+    transform: rotate(0deg);
+}
+
+/* Mantendo a aparência do fundo */
+.progress-ring__background {
+    fill: none;
+    stroke: #444;
+    stroke-width: 8;
+}
+
+/* Animação do círculo carregando de 0% a 100% */
+.progress-ring__circle {
+    fill: none;
+    stroke: #FEB300;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+    animation: progressAnimation 2s ease-in-out forwards;
+    transform-origin: center;
+}
+
+/* Ajuste do texto dentro do círculo para ficar centralizado */
+.progress-text {
+    font-size: 22px;
+    fill: white;
+    font-weight: bold;
+    dominant-baseline: middle;
+    text-anchor: middle;
+}
+
+/* Animação do progresso */
+@keyframes progressAnimation {
+    from {
+        stroke-dashoffset: 314;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* ✅ Responsividade */
+@media (max-width: 1024px) {
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .about-image {
+        max-width: 80%;
+    }
+
+    .about-details {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-images {
+        width: 80%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 30px 15px;
+    }
+
+    .about-content h1 {
+        font-size: 42px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-image {
+        max-width: 90%;
+    }
+
+    .about-details {
+        padding: 30px 15px;
+    }
+
+    .about-images {
+        width: 90%;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h1 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .about-images {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-stats {
+        gap: 30px;
+    }
+}

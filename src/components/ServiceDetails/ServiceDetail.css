@@ -1,0 +1,150 @@
+.service-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color: #131313;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-content {
+  max-width: 50%;
+}
+
+.service-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.service-content p {
+  font-size: 18px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  margin-top: 20px;
+  background: rgba(34, 34, 34, 0.8);
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.breadcrumb a:hover {
+  color: #c49a5a;
+}
+
+.breadcrumb .active {
+  color: #c49a5a;
+  font-weight: bold;
+}
+
+/* Nova seção */
+.service-feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: #0d0d0d;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.service-feature.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-image {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.feature-content {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.feature-content h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #c49a5a;
+  font-weight: bold;
+}
+
+.feature-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li i {
+  margin-right: 10px;
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .service-detail {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+  }
+
+  .service-content {
+      max-width: 100%;
+  }
+
+  .service-image {
+      margin-top: 20px;
+      max-width: 90%;
+  }
+
+  .service-feature {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+  }
+
+  .feature-content {
+      padding-left: 0;
+      margin-top: 20px;
+  }
+}
