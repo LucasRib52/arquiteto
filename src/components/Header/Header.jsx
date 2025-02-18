@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/inovare_home_logo_transparente.png";
+import logo from "../../../public/assets/inovare_home_logo_transparente.png";
 
 export default function Header() {
   const navigate = useNavigate();

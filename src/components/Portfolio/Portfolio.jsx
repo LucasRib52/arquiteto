@@ -37,7 +37,7 @@ const Portfolio = () => {
         </a>
       </div>
       <div className="portfolio-image">
-        <img src="src/assets/teste.jpg" alt="Inovare Home" />
+        <img src="/assets/teste.jpg" alt="Inovare Home" />
       </div>
     </section>
   );

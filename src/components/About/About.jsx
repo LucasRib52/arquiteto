@@ -7,10 +7,10 @@ const About = () => {
       <div className="about-container">
         {/* Imagem Esquerda */}
         <div className="about-image-left">
-          <img src="/src/assets/about1.png" alt="Interior Design" />
+        <img src="/assets/about1.png" alt="Interior Design" />
           <div className="about-badge">
             <div className="badge-inner">
-              <img src="/src/assets/inovare_home_logo_transparente.png" alt="Inovare Home" />
+              <img src="/assets/inovare_home_logo_transparente.png" alt="Inovare Home" />
               <p>INOVARE HOME</p>
             </div>
           </div>
@@ -36,7 +36,7 @@ const About = () => {
 
         {/* Imagem Direita */}
         <div className="about-image-right">
-          <img src="/src/assets/about2.png" alt="Modern Interior" />
+          <img src="/assets/about2.png" alt="Modern Interior" />
         </div>
       </div>
     </section>

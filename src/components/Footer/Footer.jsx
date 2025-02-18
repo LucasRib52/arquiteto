@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Coluna da logo e CTA */}
         <div className="footer-column">
           <div className="footer-logo">
-            <img src="src/assets/inovare_home_logo_transparente.png" alt="Logo" />
+            <img src="/assets/inovare_home_logo_transparente.png" alt="Logo" />
             <span className="footer-brand">Inovare Home</span>
           </div>
           <p className="footer-text">
@@ -24,19 +24,19 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Contact Info:</h3>
           <div className="footer-info">
-            <img src="src/assets/footer-callicon.png" alt="Call Icon" className="footer-icon" />
+            <img src="/assets/footer-callicon.png" alt="Call Icon" className="footer-icon" />
             <p>Call us at: <br />
               <a href="tel:+5561987654321">+1 321 732-2333</a>
             </p>
           </div>
           <div className="footer-info">
-            <img src="src/assets/footer-locationicon.png" alt="Location Icon" className="footer-icon" />
+            <img src="/assets/footer-locationicon.png" alt="Location Icon" className="footer-icon" />
             <p>Our Location: <br />
               <strong>EUA <br /> EUA</strong>
             </p>
           </div>
           <div className="footer-info">
-            <img src="src/assets/footer-emailicon.png" alt="Email Icon" className="footer-icon" />
+            <img src="/assets/footer-emailicon.png" alt="Email Icon" className="footer-icon" />
             <p>Email us at: <br />
               <a href="">inovarellc@gmail.com</a>
             </p>

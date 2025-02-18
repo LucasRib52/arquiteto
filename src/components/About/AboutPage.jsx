@@ -41,15 +41,15 @@ function AboutPage() {
                     </div>
                 </div>
                 <div className="about-image">
-                    <img src="src/assets/about-bannerimage.jpg" alt="About Us" />
+                    <img src="/assets/about-bannerimage.jpg" alt="About Us" />
                 </div>
             </div>
 
             {/* Seção Sobre a Empresa */}
             <div className="about-details">
                 <div className="about-images">
-                    <img src="src/assets/about1.png" alt="Interior Design" className="image-main" />
-                    <img src="src/assets/about2.png" alt="Modern Architecture" className="image-overlay" />
+                    <img src="/assets/about1.png" alt="Interior Design" className="image-main" />
+                    <img src="/assets/about2.png" alt="Modern Architecture" className="image-overlay" />
                 </div>
 
                 <div className="about-text">

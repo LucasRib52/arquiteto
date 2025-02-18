@@ -3,32 +3,33 @@ import { useState } from "react";
 import Depoimentos from "../Depoimentos/Depoimentos";
 import Contact from "../Contact/Contact";
 
-// Importando imagens manualmente
-import quarto1 from "../../assets/quartos/quarto1.jpeg";
-import quarto2 from "../../assets/quartos/quarto2.jpeg";
-import quarto3 from "../../assets/quartos/quarto3.jpeg";
-import quarto4 from "../../assets/quartos/quarto4.jpeg";
-import quarto5 from "../../assets/quartos/quarto5.jpeg";
-import quarto6 from "../../assets/quartos/quarto6.jpeg";
-import quarto7 from "../../assets/quartos/quarto7.jpeg";
-import quarto8 from "../../assets/quartos/quarto8.jpeg";
-import quarto9 from "../../assets/quartos/quarto9.jpeg";
-import quarto10 from "../../assets/quartos/quarto10.jpeg";
-import quarto11 from "../../assets/quartos/quarto11.jpeg";
-import quarto12 from "../../assets/quartos/quarto12.jpeg";
-import quarto13 from "../../assets/quartos/quarto13.jpeg";
-import quarto14 from "../../assets/quartos/quarto14.jpeg";
+// Importando imagens manualmente com caminhos corretos
+const quarto1 = "/assets/quartos/quarto1.jpeg";
+const quarto2 = "/assets/quartos/quarto2.jpeg";
+const quarto3 = "/assets/quartos/quarto3.jpeg";
+const quarto4 = "/assets/quartos/quarto4.jpeg";
+const quarto5 = "/assets/quartos/quarto5.jpeg";
+const quarto6 = "/assets/quartos/quarto6.jpeg";
+const quarto7 = "/assets/quartos/quarto7.jpeg";
+const quarto8 = "/assets/quartos/quarto8.jpeg";
+const quarto9 = "/assets/quartos/quarto9.jpeg";
+const quarto10 = "/assets/quartos/quarto10.jpeg";
+const quarto11 = "/assets/quartos/quarto11.jpeg";
+const quarto12 = "/assets/quartos/quarto12.jpeg";
+const quarto13 = "/assets/quartos/quarto13.jpeg";
+const quarto14 = "/assets/quartos/quarto14.jpeg";
 
-import sala1 from "../../assets/salas/sala1.jpeg";
-import sala2 from "../../assets/salas/sala2.jpeg";
-import sala3 from "../../assets/salas/sala3.jpeg";
-import sala4 from "../../assets/salas/sala4.jpeg";
-import sala5 from "../../assets/salas/sala5.jpeg";
-import sala6 from "../../assets/salas/sala6.jpeg";
-import sala7 from "../../assets/salas/sala7.jpeg";
+const sala1 = "/assets/salas/sala1.jpeg";
+const sala2 = "/assets/salas/sala2.jpeg";
+const sala3 = "/assets/salas/sala3.jpeg";
+const sala4 = "/assets/salas/sala4.jpeg";
+const sala5 = "/assets/salas/sala5.jpeg";
+const sala6 = "/assets/salas/sala6.jpeg";
+const sala7 = "/assets/salas/sala7.jpeg";
 
-import cozinha1 from "../../assets/cozinhas/cozinha1.jpeg";
-import cozinha2 from "../../assets/cozinhas/cozinha2.jpeg";
+const cozinha1 = "/assets/cozinhas/cozinha1.jpeg";
+const cozinha2 = "/assets/cozinhas/cozinha2.jpeg";
+
 
 function PortfolioPage() {
     const [category, setCategory] = useState("all");
@@ -81,7 +82,7 @@ function PortfolioPage() {
                     </div>
                 </div>
                 <div className="portfolio-image">
-                    <img src="src/assets/portfolio1.jpg" alt="Our Portfolio" />
+                    <img src="/assets/portfolio1.jpg" alt="Our Portfolio" />
                 </div>
             </div>
 

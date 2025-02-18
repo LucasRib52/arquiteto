@@ -7,21 +7,21 @@ const steps = [
     title: "Strategy and Planning",
     description:
       "Aut officiis debitis aut rerum nec sitatibus saepe eveniet ut voluptate maiores alias aut.",
-    icon: "/src/assets/process-icon1.png",
+    icon: "/assets/process-icon1.png",
   },
   {
     number: "02",
     title: "Concept Design",
     description:
       "Dut officiis debitis aut rerum nec sitatibus saepe eveniet ut voluptate maiores alias aut.",
-    icon: "/src/assets/process-icon2.png",
+    icon: "/assets/process-icon2.png",
   },
   {
     number: "03",
     title: "Design Development",
     description:
       "Rut officiis debitis aut rerum nec sitatibus saepe eveniet ut voluptate maiores alias aut.",
-    icon: "/src/assets/process-icon3.png",
+    icon: "/assets/process-icon3.png",
   },
 ];
 

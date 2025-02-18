@@ -17,7 +17,7 @@ body {
   padding: 50px;
   color: #fff;
   overflow: hidden;
-  background: url("../../assets/home.jpg") no-repeat center center;
+  background: url("/public/assets/home.jpg") no-repeat center center;
   background-size: cover;
 }
 

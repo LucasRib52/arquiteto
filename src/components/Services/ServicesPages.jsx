@@ -17,7 +17,7 @@ function ServicesPage() {
                     </div>
                 </div>
                 <div className="services-image">
-                    <img src="src/assets/about-bannerimage.jpg" alt="Our Services" />
+                    <img src="/assets/about-bannerimage.jpg" alt="Our Services" />
                 </div>
             </div>
         	<Services />

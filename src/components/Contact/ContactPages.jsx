@@ -15,7 +15,7 @@ function ContactPage() {
                     </div>
                 </div>
                 <div className="contact-image">
-                    <img src="src/assets/contact-bannerimage.jpg" alt="Contact Us" />
+                    <img src="/assets/contact-bannerimage.jpg" alt="Contact Us" />
                 </div>
             </div>
 
@@ -26,21 +26,21 @@ function ContactPage() {
                 <div className="contact-grid">
                     {/* Localização */}
                     <div className="contact-card">
-                        <img src="src/assets/contact-locationicon.png" alt="Location" />
+                        <img src="/assets/contact-locationicon.png" alt="Location" />
                         <h4>Location:</h4>
                         <p>Level 7/180 Flinders St, Melbourne VIC 3000, Australia</p>
                     </div>
 
                     {/* E-mail */}
                     <div className="contact-card">
-                        <img src="src/assets/contact-emailicon.png" alt="Email" />
+                        <img src="/assets/contact-emailicon.png" alt="Email" />
                         <h4>Email:</h4>
                         <p>inovarellc@gmail.com</p>
                     </div>
 
                     {/* Telefone */}
                     <div className="contact-card">
-                        <img src="src/assets/contact-phoneicon.png" alt="Phone" />
+                        <img src="/assets/contact-phoneicon.png" alt="Phone" />
                         <h4>Phone:</h4>
                         <p>+1 321 732-2333</p>
                     </div>
