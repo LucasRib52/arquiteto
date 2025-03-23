@@ -1,27 +1,27 @@
 import React from "react";
 import "./Progress.css";
 
-const steps = [
+const etapas = [
   {
-    number: "01",
-    title: "Strategy and Planning",
-    description:
-      "Aut officiis debitis aut rerum nec sitatibus saepe eveniet ut voluptate maiores alias aut.",
-    icon: "/assets/process-icon1.png",
+    numero: "01",
+    titulo: "Estratégia e Planejamento",
+    descricao:
+      "Criamos um plano estratégico detalhado para garantir que cada projeto atenda às suas necessidades e expectativas.",
+    icone: "/assets/process-icon1.png",
   },
   {
-    number: "02",
-    title: "Concept Design",
-    description:
-      "Dut officiis debitis aut rerum nec sitatibus saepe eveniet ut voluptate maiores alias aut.",
-    icon: "/assets/process-icon2.png",
+    numero: "02",
+    titulo: "Conceito e Design",
+    descricao:
+      "Desenvolvemos conceitos inovadores e personalizados, alinhados ao seu estilo e às tendências de arquitetura e interiores.",
+    icone: "/assets/process-icon2.png",
   },
   {
-    number: "03",
-    title: "Design Development",
-    description:
-      "Rut officiis debitis aut rerum nec sitatibus saepe eveniet ut voluptate maiores alias aut.",
-    icon: "/assets/process-icon3.png",
+    numero: "03",
+    titulo: "Desenvolvimento do Projeto",
+    descricao:
+      "Transformamos o conceito em realidade, cuidando de cada detalhe para garantir um resultado sofisticado e funcional.",
+    icone: "/assets/process-icon3.png",
   },
 ];
 
@@ -29,19 +29,19 @@ const Progress = () => {
   return (
     <section className="progress-section">
       <div className="progress-header">
-        <p className="progress-subtitle">Our Process</p>
-        <h2 className="progress-title">See How We Work For You</h2>
+        <p className="progress-subtitle">Nosso Processo</p>
+        <h2 className="progress-title">Veja Como Trabalhamos Para Você</h2>
       </div>
 
       <div className="progress-container">
-        {steps.map((step, index) => (
+        {etapas.map((etapa, index) => (
           <div key={index} className="progress-card">
             <div className="progress-icon">
-              <img src={step.icon} alt={step.title} />
+              <img src={etapa.icone} alt={etapa.titulo} />
             </div>
-            <h3 className="progress-number">{step.number}</h3>
-            <h4 className="progress-title-text">{step.title}</h4>
-            <p className="progress-description">{step.description}</p>
+            <h3 className="progress-number">{etapa.numero}</h3>
+            <h4 className="progress-title-text">{etapa.titulo}</h4>
+            <p className="progress-description">{etapa.descricao}</p>
           </div>
         ))}
       </div>

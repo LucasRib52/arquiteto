@@ -8,7 +8,7 @@ body {
   background-color: #131313;
 }
 
-/* Estilização do Header */
+/* Header geral */
 .navbar {
   background-color: #131313;
   padding: 15px 40px;
@@ -16,14 +16,15 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* Logo */
@@ -35,7 +36,7 @@ body {
 }
 
 .logo img {
-  height: 90px;
+  height: 90px; /* Tamanho no desktop */
   transition: transform 0.2s ease-in-out;
 }
 
@@ -43,11 +44,17 @@ body {
   transform: scale(1.05);
 }
 
-/* Navegação */
+/* Navegação Desktop */
+.desktop-nav {
+  display: block; /* Aparece no desktop */
+}
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -64,7 +71,7 @@ body {
   position: relative;
 }
 
-/* Efeito de Hover e Página Ativa */
+/* Efeito de barra ao hover e página ativa */
 .hover-bar {
   position: absolute;
   bottom: -4px;
@@ -75,7 +82,6 @@ body {
   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
-/* Mantém a barrinha na página ativa */
 .nav-links .active .hover-bar {
   width: 100%;
   left: 0;
@@ -86,34 +92,7 @@ body {
   color: #c49a5a;
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background: #222;
-  list-style: none;
-  padding: 10px;
-  border-radius: 5px;
-  top: 100%;
-  left: 0;
-  min-width: 120px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  margin: 5px 0;
-}
-
-.dropdown-menu a {
-  color: #fff;
-  font-size: 14px;
-}
-
-/* Botão de Contato */
+/* Botão de Contato (Desktop) */
 .contact-button {
   display: flex;
   align-items: center;
@@ -123,10 +102,10 @@ body {
   text-decoration: none;
   background: linear-gradient(135deg, #c49a5a 0%, #e0a96d 100%);
   color: #131313;
-  padding: 10px 22px; /* Reduzindo um pouco o padding */
-  border-radius: 30px; /* Bordas arredondadas */
+  padding: 10px 22px;
+  border-radius: 30px;
   font-weight: bold;
-  font-size: 15px; /* Fonte menor */
+  font-size: 15px;
   display: flex;
   align-items: center;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -138,22 +117,28 @@ body {
   font-size: 16px;
 }
 
-/* Hover com efeito de brilho */
 .contact-link:hover {
   background: linear-gradient(135deg, #e0a96d 0%, #f0b86f 100%);
   transform: scale(1.05);
   box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.4);
 }
 
-/* RESPONSIVIDADE */
+/* ========== Esconde itens mobile no desktop ========== */
+.mobile-menu-icon,
+.mobile-menu {
+  display: none;
+}
+
+/* ===================== BREAKPOINTS ===================== */
+
+/* Exemplo: até 1024px (pode ajustar conforme a necessidade) */
 @media (max-width: 1024px) {
   .navbar {
     padding: 15px 30px;
   }
   
   .logo img {
-    height: 70px;
-    margin-right: 15px;
+    height: 80px;
   }
   
   .nav-links {
@@ -170,47 +155,91 @@ body {
   }
 }
 
+/* Até 768px (mobile) */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
+  /* Some com a navegação desktop e o botão de contato no topo */
+  .desktop-nav,
+  .desktop-contact {
+    display: none !important; /* Força a sumir no mobile */
   }
 
+  /* Aumentar a logo no celular (opcional) */
   .logo img {
-    height: 60px;
-    margin-bottom: 10px;
+    height: 120px; /* Ajuste conforme desejar */
   }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  /* Ícone do menu mobile */
+  .mobile-menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
   }
 
-  .contact-button {
-    margin-top: 10px;
+  /* Menu lateral mobile */
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background: #131313;
+    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.7);
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
   }
 
-  .contact-link {
-    padding: 10px 20px;
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .mobile-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-nav-links li {
+    margin: 15px 0;
+  }
+
+  .mobile-nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+
+  .mobile-nav-links a:hover {
+    color: #c49a5a;
   }
 }
 
+/* Até 480px (celulares menores) */
 @media (max-width: 480px) {
   .navbar {
     padding: 10px 20px;
   }
 
-  .logo img {
-    height: 50px;
+  .mobile-menu-icon {
+    font-size: 24px;
   }
 
-  .nav-links {
-    gap: 10px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
+  .mobile-nav-links a {
+    font-size: 16px;
   }
 
   .contact-link {

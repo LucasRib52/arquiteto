@@ -15,6 +15,7 @@ import Contact from "./components/Contact/Contact";
 import ContactPage from "./components/Contact/ContactPages"; // Importação da nova página de Contato
 import Footer from "./components/Footer/Footer";
 
+
 function App() {
   return (
     <Router>

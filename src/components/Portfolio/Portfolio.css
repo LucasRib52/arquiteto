@@ -3,18 +3,16 @@
   align-items: center;
   justify-content: space-between;
   background: #0d0d0d;
-  color: white;
+  color: #fff;
   padding: 80px 100px;
   position: relative;
   gap: 50px;
 }
 
-/* Ajuste da largura máxima para melhor adaptação */
 .portfolio-content {
   max-width: 500px;
 }
 
-/* Responsável por alinhar os números e o "+" */
 .years-container {
   display: flex;
   align-items: center;
@@ -56,7 +54,6 @@
   color: #ddd;
 }
 
-/* Botão de "Discover More" */
 .discover-btn {
   display: inline-block;
   font-size: 18px;
@@ -74,7 +71,6 @@
   transform: scale(1.05);
 }
 
-/* Ajuste da imagem */
 .portfolio-image {
   position: relative;
 }
@@ -90,114 +86,117 @@
   transform: scale(1.05);
 }
 
-/* 🔥 RESPONSIVIDADE 🔥 */
+/* Large desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .portfolio {
+    padding: 70px 80px;
+    gap: 40px;
+  }
+  .portfolio h1 {
+    font-size: 80px;
+  }
+  .number {
+    font-size: 90px;
+  }
+  .plus {
+    font-size: 45px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .description {
+    font-size: 17px;
+  }
+  .portfolio-image img {
+    width: 400px;
+  }
+}
 
-/* ✅ Tablets e telas menores */
+/* Tablets and smaller screens (max-width: 1024px) */
 @media (max-width: 1024px) {
   .portfolio {
-      flex-direction: column;
-      text-align: center;
-      padding: 60px 50px;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 50px;
   }
-
   .portfolio-content {
-      max-width: 100%;
+    max-width: 100%;
   }
-
   .portfolio h1 {
-      font-size: 70px;
+    font-size: 70px;
   }
-
   .number {
-      font-size: 80px;
+    font-size: 80px;
   }
-
   .plus {
-      font-size: 40px;
+    font-size: 40px;
   }
-
   .subtitle {
-      font-size: 22px;
+    font-size: 22px;
   }
-
   .description {
-      font-size: 16px;
+    font-size: 16px;
   }
-
   .portfolio-image img {
-      width: 100%;
-      max-width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
-/* ✅ Celulares */
+/* Mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
   .portfolio {
-      padding: 50px 30px;
+    padding: 50px 30px;
   }
-
   .portfolio h1 {
-      font-size: 50px;
+    font-size: 50px;
   }
-
   .number {
-      font-size: 60px;
+    font-size: 60px;
   }
-
   .plus {
-      font-size: 30px;
+    font-size: 30px;
   }
-
   .subtitle {
-      font-size: 20px;
+    font-size: 20px;
   }
-
   .description {
-      font-size: 14px;
+    font-size: 14px;
   }
-
   .discover-btn {
-      font-size: 16px;
-      padding: 8px 16px;
+    font-size: 16px;
+    padding: 8px 16px;
   }
-
   .portfolio-image img {
-      max-width: 300px;
+    max-width: 300px;
   }
 }
 
-/* ✅ Celulares pequenos */
+/* Small mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .portfolio {
-      padding: 40px 20px;
+    padding: 40px 20px;
   }
-
   .portfolio h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
-
   .number {
-      font-size: 50px;
+    font-size: 50px;
   }
-
   .plus {
-      font-size: 25px;
+    font-size: 25px;
   }
-
   .subtitle {
-      font-size: 18px;
+    font-size: 18px;
   }
-
   .description {
-      font-size: 14px;
+    font-size: 14px;
   }
-
   .discover-btn {
-      font-size: 14px;
-      padding: 6px 14px;
+    font-size: 14px;
+    padding: 6px 14px;
   }
-
   .portfolio-image img {
-      max-width: 250px;
+    max-width: 250px;
   }
 }

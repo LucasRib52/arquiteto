@@ -2,19 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./Portfolio.css";
 
 const Portfolio = () => {
-  const [years, setYears] = useState(0);
-  const targetYears = 10; // Defina os anos de experiência aqui
+  const [anos, setAnos] = useState(0);
+  const anosExperiencia = 5; // Defina os anos de experiência aqui
 
   useEffect(() => {
-    let interval = setInterval(() => {
-      setYears((prev) => {
-        if (prev < targetYears) return prev + 1;
-        clearInterval(interval);
-        return targetYears;
+    let intervalo = setInterval(() => {
+      setAnos((prev) => {
+        if (prev < anosExperiencia) return prev + 1;
+        clearInterval(intervalo);
+        return anosExperiencia;
       });
     }, 100);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalo);
   }, []);
 
   return (
@@ -22,18 +22,18 @@ const Portfolio = () => {
       <div className="portfolio-content">
         <div className="years-container">
           <h1>
-            <span className="number">{years}</span>
+            <span className="number">{anos}</span>
             <span className="plus">+</span>
           </h1>
-          <p className="subtitle">Years of Excellence in Architecture</p>
+          <p className="subtitle">Anos de Excelência em Arquitetura</p>
         </div>
         <p className="description">
-          <strong>Inovare Home</strong> has been shaping spaces for over a decade, delivering modern, 
-          innovative, and high-quality architectural solutions. Our commitment to excellence and 
-          attention to detail set us apart in the industry.
+          <strong>Inovare Home</strong> transforma espaços há anos, oferecendo 
+          soluções arquitetônicas modernas, inovadoras e de alta qualidade. Nosso compromisso com a 
+          excelência e atenção aos detalhes nos destacam no setor.
         </p>
         <a href="#about" className="discover-btn">
-          Discover More →
+          Saiba Mais →
         </a>
       </div>
       <div className="portfolio-image">

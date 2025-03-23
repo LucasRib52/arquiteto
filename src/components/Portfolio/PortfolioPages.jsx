@@ -30,7 +30,6 @@ const sala7 = "/assets/salas/sala7.jpeg";
 const cozinha1 = "/assets/cozinhas/cozinha1.jpeg";
 const cozinha2 = "/assets/cozinhas/cozinha2.jpeg";
 
-
 function PortfolioPage() {
     const [category, setCategory] = useState("all");
 
@@ -50,7 +49,6 @@ function PortfolioPage() {
         { id: 12, category: "quartos", img: quarto12 },
         { id: 13, category: "quartos", img: quarto13 },
         { id: 14, category: "quartos", img: quarto14 },
-
 
         // Salas
         { id: 15, category: "salas", img: sala1 },
@@ -73,28 +71,31 @@ function PortfolioPage() {
             {/* Seção Hero */}
             <div className="portfolio-hero">
                 <div className="portfolio-content">
-                    <h1>Our Portfolio</h1>
+                    <h1>Nosso Portfólio</h1>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos maiores error tenetur, rem voluptatem aut inventore vitae molestiae possimus eos, deserunt, ullam eligendi quisquam! Architecto natus unde mollitia quia totam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero error necessitatibus consequuntur est dolor repudiandae cum incidunt aspernatur eaque, cumque temporibus quasi enim vero. Corporis, voluptates sint? Voluptates, amet?
+                        Apresentamos nossos projetos mais recentes, que refletem inovação, sofisticação e funcionalidade. Cada ambiente é projetado com atenção aos detalhes, transformando espaços em verdadeiras obras de arte.
+                    </p>
+                    <p>
+                        Descubra como a Inovare Home pode elevar o design do seu ambiente, criando espaços que combinam estética, conforto e praticidade.
                     </p>
                     <div className="breadcrumb">
-                        <span>Home</span> <span>-</span> <span className="active">Portfolio</span>
+                        <span>Home</span> <span>-</span> <span className="active">Portfólio</span>
                     </div>
                 </div>
                 <div className="portfolio-image">
-                    <img src="/assets/portfolio1.jpg" alt="Our Portfolio" />
+                    <img src="/assets/portfolio1.jpg" alt="Nosso Portfólio" />
                 </div>
             </div>
 
             {/* Seção de Categorias */}
             <div className="portfolio-categories">
-                <h3>What's New</h3>
-                <h2>Recent Work We Have Done</h2>
+                <h3>Novidades</h3>
+                <h2>Projetos Recentes</h2>
                 <div className="portfolio-filters">
-                    <button className={category === "all" ? "active" : ""} onClick={() => setCategory("all")}>All</button>
-                    <button className={category === "quartos" ? "active" : ""} onClick={() => setCategory("quartos")}>Rooms</button>
-                    <button className={category === "salas" ? "active" : ""} onClick={() => setCategory("salas")}>Living Room</button>
-                    <button className={category === "cozinhas" ? "active" : ""} onClick={() => setCategory("cozinhas")}>Kitchens</button>
+                    <button className={category === "all" ? "active" : ""} onClick={() => setCategory("all")}>Todos</button>
+                    <button className={category === "quartos" ? "active" : ""} onClick={() => setCategory("quartos")}>Quartos</button>
+                    <button className={category === "salas" ? "active" : ""} onClick={() => setCategory("salas")}>Salas de Estar</button>
+                    <button className={category === "cozinhas" ? "active" : ""} onClick={() => setCategory("cozinhas")}>Cozinhas</button>
                 </div>
             </div>
 
@@ -102,7 +103,7 @@ function PortfolioPage() {
             <div className="portfolio-grid">
                 {filteredItems.map(item => (
                     <div key={item.id} className="portfolio-item">
-                        <img src={item.img} alt={`Portfolio ${item.category}`} />
+                        <img src={item.img} alt={`Portfólio ${item.category}`} />
                     </div>
                 ))}
             </div>

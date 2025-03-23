@@ -6,42 +6,42 @@ function ContactPage() {
             {/* Seção Hero */}
             <div className="contact-hero">
                 <div className="contact-content">
-                    <h1>Contact Us</h1>
+                    <h1>Entre em Contato</h1>
                     <p>
-                        Guis aute irure dolor in reprehenderit in eouta velireu esse fugiat nulla pariatur.
+                        Estamos prontos para transformar seu projeto em realidade. Fale conosco e descubra como podemos ajudar!
                     </p>
                     <div className="breadcrumb">
-                        <span>Home</span> <span>-</span> <span className="active">Contact</span>
+                        <span>Home</span> <span>-</span> <span className="active">Contato</span>
                     </div>
                 </div>
                 <div className="contact-image">
-                    <img src="/assets/contact-bannerimage.jpg" alt="Contact Us" />
+                    <img src="/assets/contact-bannerimage.jpg" alt="Entre em Contato" />
                 </div>
             </div>
 
             {/* Seção de Informações de Contato */}
             <div className="contact-info">
-                <h3>Contact Info</h3>
-                <h2>Our Contact Information</h2>
+                <h3>Informações de Contato</h3>
+                <h2>Fale Conosco</h2>
                 <div className="contact-grid">
                     {/* Localização */}
                     <div className="contact-card">
-                        <img src="/assets/contact-locationicon.png" alt="Location" />
-                        <h4>Location:</h4>
-                        <p>Level 7/180 Flinders St, Melbourne VIC 3000, Australia</p>
+                        <img src="/assets/contact-locationicon.png" alt="Localização" />
+                        <h4>Endereço:</h4>
+                        <p>Level 7/180 Flinders St, Melbourne VIC 3000, Austrália</p>
                     </div>
 
                     {/* E-mail */}
                     <div className="contact-card">
-                        <img src="/assets/contact-emailicon.png" alt="Email" />
-                        <h4>Email:</h4>
+                        <img src="/assets/contact-emailicon.png" alt="E-mail" />
+                        <h4>E-mail:</h4>
                         <p>inovarellc@gmail.com</p>
                     </div>
 
                     {/* Telefone */}
                     <div className="contact-card">
-                        <img src="/assets/contact-phoneicon.png" alt="Phone" />
-                        <h4>Phone:</h4>
+                        <img src="/assets/contact-phoneicon.png" alt="Telefone" />
+                        <h4>Telefone:</h4>
                         <p>+1 321 732-2333</p>
                     </div>
                 </div>
@@ -50,31 +50,31 @@ function ContactPage() {
             {/* Seção de Formulário de Contato */}
             <div className="contact-form-container">
                 <div className="contact-form">
-                    <h3>Get in Touch</h3>
-                    <h2>Send us a Message</h2>
+                    <h3>Entre em Contato</h3>
+                    <h2>Envie-nos uma Mensagem</h2>
                     <form>
                         <div className="input-container">
-                            <label>First Name:</label>
-                            <input type="text" placeholder="First Name" required />
+                            <label>Nome:</label>
+                            <input type="text" placeholder="Digite seu nome" required />
                         </div>
                         <div className="input-container">
-                            <label>Last Name:</label>
-                            <input type="text" placeholder="Last Name" required />
+                            <label>Sobrenome:</label>
+                            <input type="text" placeholder="Digite seu sobrenome" required />
                         </div>
                         <div className="input-container">
-                            <label>Phone No:</label>
-                            <input type="text" placeholder="Phone No" required />
+                            <label>Telefone:</label>
+                            <input type="text" placeholder="Digite seu telefone" required />
                         </div>
                         <div className="input-container">
-                            <label>Your Email:</label>
-                            <input type="email" placeholder="Your Email" required />
+                            <label>Seu E-mail:</label>
+                            <input type="email" placeholder="Digite seu e-mail" required />
                         </div>
                         <div className="input-container">
-                            <label>Message:</label>
-                            <textarea placeholder="Message" required></textarea>
+                            <label>Mensagem:</label>
+                            <textarea placeholder="Digite sua mensagem" required></textarea>
                         </div>
                         <button type="submit" className="send-btn">
-                            Send Now <span>➜</span>
+                            Enviar Agora <span>➜</span>
                         </button>
                     </form>
                 </div>

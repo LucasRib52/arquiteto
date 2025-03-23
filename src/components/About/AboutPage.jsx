@@ -5,26 +5,26 @@ import Contact from "../Contact/Contact";
 
 function AboutPage() {
     // Estados para controlar a animação dos círculos
-    const [progress, setProgress] = useState({ design: 0, architecture: 0, planning: 0 });
+    const [progresso, setProgresso] = useState({ design: 0, arquitetura: 0, planejamento: 0 });
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setProgress((prev) => {
-                let newValues = { ...prev };
+        const intervalo = setInterval(() => {
+            setProgresso((prev) => {
+                let novosValores = { ...prev };
 
                 // Incrementa cada valor até chegar a 100
-                if (newValues.design < 100) newValues.design += 1;
-                if (newValues.architecture < 100) newValues.architecture += 1;
-                if (newValues.planning < 100) newValues.planning += 1;
+                if (novosValores.design < 100) novosValores.design += 1;
+                if (novosValores.arquitetura < 100) novosValores.arquitetura += 1;
+                if (novosValores.planejamento < 100) novosValores.planejamento += 1;
 
-                return newValues;
+                return novosValores;
             });
         }, 20); // Atualiza a cada 20ms para suavizar a contagem
 
         // Para a contagem quando atingir 100%
-        setTimeout(() => clearInterval(interval), 2000);
+        setTimeout(() => clearInterval(intervalo), 2000);
 
-        return () => clearInterval(interval);
+        return () => clearInterval(intervalo);
     }, []);
 
     return (
@@ -32,43 +32,44 @@ function AboutPage() {
             {/* Seção Hero */}
             <div className="about-hero">
                 <div className="about-content">
-                    <h1>About Us</h1>
+                    <h1>Sobre Nós</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsa libero delectus. Iste, distinctio? Impedit fugit optio amet, harum ipsum minima modi, esse maxime fuga dolorem quia blanditiis expedita unde? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde suscipit amet illum consequuntur ducimus impedit possimus exercitationem, quibusdam voluptatem odit. Consequuntur harum vitae sit non aliquam labore magni quidem officiis.
+                        A Inovare Home é referência em design de interiores e arquitetura, criando espaços que aliam sofisticação e funcionalidade. Nossa equipe transforma ambientes, trazendo inovação e beleza em cada projeto.
+                    </p>
+                    <p>
+                        Nossa missão é proporcionar experiências únicas através de soluções arquitetônicas e decorativas personalizadas, atendendo às necessidades e expectativas de cada cliente.
                     </p>
                     <div className="breadcrumb">
-                        <span>Home</span> <span>-</span> <span className="active">About</span>
+                        <span>Home</span> <span>-</span> <span className="active">Sobre</span>
                     </div>
                 </div>
                 <div className="about-image">
-                    <img src="/assets/about-bannerimage.jpg" alt="About Us" />
+                    <img src="/assets/about-bannerimage.jpg" alt="Sobre Nós" />
                 </div>
             </div>
 
             {/* Seção Sobre a Empresa */}
             <div className="about-details">
                 <div className="about-images">
-                    <img src="/assets/about1.png" alt="Interior Design" className="image-main" />
-                    <img src="/assets/about2.png" alt="Modern Architecture" className="image-overlay" />
+                    <img src="/assets/about1.png" alt="Design de Interiores" className="image-main" />
+                    <img src="/assets/about2.png" alt="Arquitetura Moderna" className="image-overlay" />
                 </div>
 
                 <div className="about-text">
-                    <h3>About Us</h3>
-                    <h1>We are The Leader in Interior Design Services</h1>
+                    <h3>Sobre Nós</h3>
+                    <h1>Somos Líderes em Serviços de Design de Interiores</h1>
                     <p>
-                        Temporibus autem quibusdam et aut officiis debitis aut reu atibus saepe eveniet ut et
-                        voluptates repudiandae sint et mo non recusandae reiciendis maiores.
+                        Nossa abordagem inovadora e detalhista garante projetos exclusivos, que valorizam estética e funcionalidade. Cada ambiente é planejado para oferecer conforto e beleza de forma harmônica.
                     </p>
                     <p>
-                        Reprehenderit rui in ea voluptate velit esse quam nihil moles iae consequatur, vel illum ui
-                        dolorem.
+                        Nosso compromisso é criar espaços que refletem personalidade e elegância, sempre alinhados às últimas tendências do mercado.
                     </p>
 
                     {/* Círculos de Estatísticas */}
                     <div className="about-stats">
-                        <StatCircle percentage={progress.design} label="Interior Design" />
-                        <StatCircle percentage={progress.architecture} label="Architect Services" />
-                        <StatCircle percentage={progress.planning} label="Idea & Planning" />
+                        <StatCircle porcentagem={progresso.design} label="Design de Interiores" />
+                        <StatCircle porcentagem={progresso.arquitetura} label="Serviços de Arquitetura" />
+                        <StatCircle porcentagem={progresso.planejamento} label="Ideias & Planejamento" />
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@ function AboutPage() {
     );
 }
 
-function StatCircle({ percentage, label }) {
+function StatCircle({ porcentagem, label }) {
     return (
         <div className="stat">
             <svg className="progress-ring" width="120" height="120">
@@ -91,10 +92,10 @@ function StatCircle({ percentage, label }) {
                     cy="60"
                     r="50"
                     strokeDasharray="314"
-                    strokeDashoffset={(314 * (100 - percentage)) / 100}
+                    strokeDashoffset={(314 * (100 - porcentagem)) / 100}
                 />
                 <text x="60" y="65" className="progress-text">
-                    {percentage}%
+                    {porcentagem}%
                 </text>
             </svg>
             <p>{label}</p>

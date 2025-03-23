@@ -8,16 +8,19 @@ function ServicesPage() {
             {/* Seção Hero */}
             <div className="services-hero">
                 <div className="services-content">
-                    <h1>Our Services</h1>
+                    <h1>Nossos Serviços</h1>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium porro beatae veniam mollitia incidunt, dignissimos numquam deserunt sint dolores ipsam id. Deserunt, dolore dolor quisquam ad hic facere minus distinctio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque consectetur porro recusandae, alias quam magnam! Odit molestias harum magni accusantium doloremque, voluptatum facilis assumenda cumque aspernatur sint qui illo ex?
+                        Oferecemos soluções completas em arquitetura e design de interiores, transformando ambientes com inovação, sofisticação e funcionalidade. Cada projeto é planejado para atender às necessidades exclusivas dos nossos clientes, garantindo excelência em cada detalhe.
+                    </p>
+                    <p>
+                        Seja para projetos residenciais, comerciais ou corporativos, nossa equipe cria espaços harmoniosos que refletem personalidade e bem-estar, sempre alinhados às tendências mais modernas do mercado.
                     </p>
                     <div className="breadcrumb">
-                        <span>Home</span> <span>-</span> <span className="active">Services</span>
+                        <span>Home</span> <span>-</span> <span className="active">Serviços</span>
                     </div>
                 </div>
                 <div className="services-image">
-                    <img src="/assets/about-bannerimage.jpg" alt="Our Services" />
+                    <img src="/assets/about-bannerimage.jpg" alt="Nossos Serviços" />
                 </div>
             </div>
         	<Services />

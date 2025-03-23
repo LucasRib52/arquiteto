@@ -1,33 +1,33 @@
 import React from "react";
 import "./Services.css";
 
-const services = [
+const servicos = [
   {
-    title: "Architecture",
-    description: "Duis aute irure dolor in reare aenderit in voluptate velit es cillum dolore...",
-    icon: "/assets/service-icon1.png",
-    image: "/assets/architecture.jpg",
+    titulo: "Arquitetura",
+    descricao: "Projetamos espaços arquitetônicos inovadores e funcionais, combinando estética e eficiência.",
+    icone: "/assets/service-icon1.png",
+    imagem: "/assets/architecture.jpg",
     offset: "low",
   },
   {
-    title: "Interior Work",
-    description: "Duis aute irure dolor in reare aenderit in voluptate velit es cillum dolore...",
-    icon: "/assets/service-icon2.png",
-    image: "/assets/interior.jpg",
+    titulo: "Design de Interiores",
+    descricao: "Criamos ambientes internos sofisticados e personalizados, refletindo sua identidade e estilo de vida.",
+    icone: "/assets/service-icon2.png",
+    imagem: "/assets/interior.jpg",
     offset: "high",
   },
   {
-    title: "Renovation",
-    description: "Duis aute irure dolor in reare aenderit in voluptate velit es cillum dolore...",
-    icon: "/assets/service-icon3.png",
-    image: "/assets/renovation.jpg",
+    titulo: "Renovação",
+    descricao: "Transformamos e revitalizamos espaços, modernizando ambientes com soluções inteligentes e sustentáveis.",
+    icone: "/assets/service-icon3.png",
+    imagem: "/assets/renovation.jpg",
     offset: "low",
   },
   {
-    title: "Decor & Art",
-    description: "Duis aute irure dolor in reare aenderit in voluptate velit es cillum dolore...",
-    icon: "/assets/service-icon4.png",
-    image: "/assets/decor.jpg",
+    titulo: "Decoração & Arte",
+    descricao: "Incorporamos elementos decorativos e artísticos exclusivos, trazendo personalidade e elegância aos espaços.",
+    icone: "/assets/service-icon4.png",
+    imagem: "/assets/decor.jpg",
     offset: "high",
   },
 ];
@@ -36,24 +36,24 @@ const Services = () => {
   return (
     <section className="services-section">
       <div className="services-header">
-        <p className="section-subtitle">What We Do</p>
-        <h2 className="section-title">Our Highlighted Services for Interior Designs</h2>
+        <p className="section-subtitle">O Que Fazemos</p>
+        <h2 className="section-title">Nossos Principais Serviços de Arquitetura e Design</h2>
       </div>
 
       <div className="services-container">
-        {services.map((service, index) => (
-          <div key={index} className={`service-card ${service.offset}`}>
+        {servicos.map((servico, index) => (
+          <div key={index} className={`service-card ${servico.offset}`}>
             <div className="service-image">
-              <img src={service.image} alt={service.title} />
+              <img src={servico.imagem} alt={servico.titulo} />
               <div className="service-icon">
-                <img src={service.icon} alt={service.title} />
+                <img src={servico.icone} alt={servico.titulo} />
               </div>
             </div>
             <div className="service-content">
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <h3>{servico.titulo}</h3>
+              <p>{servico.descricao}</p>
               <a href="/service-detail" className="read-more">
-                Read More →
+                Saiba Mais →
               </a>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Services = () => {
 
       <div className="explore-container">
         <a href="/services" className="explore-button">
-          Explore All Services →
+          Explorar Todos os Serviços →
         </a>
       </div>
     </section>

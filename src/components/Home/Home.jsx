@@ -3,20 +3,20 @@ import "./Home.css";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
-  const texts = [
-    "Design Your Home With Our Modern Interior Designs",
-    "Transform Your Space With Elegant Interior Solutions",
-    "Experience Comfort And Style Like Never Before"
+  const textos = [
+    "Transforme sua casa com designs modernos de interiores",
+    "Dê vida ao seu espaço com soluções elegantes e sofisticadas",
+    "Experimente conforto e estilo como nunca antes"
   ];
 
-  const [currentText, setCurrentText] = useState(0);
+  const [textoAtual, setTextoAtual] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentText((prevText) => (prevText + 1) % texts.length);
+    const intervalo = setInterval(() => {
+      setTextoAtual((prevTexto) => (prevTexto + 1) % textos.length);
     }, 5000); // Troca de texto a cada 5 segundos
 
-    return () => clearInterval(interval);
+    return () => clearInterval(intervalo);
   }, []);
 
   return (
@@ -34,18 +34,18 @@ export default function Home() {
       <div className="container">
         {/* Esquerda - Texto Rotativo */}
         <div className="text-content">
-          <h1 key={currentText} className="fade-in">{texts[currentText]}</h1>
-          <p>Quis aute irure dolor in reprehenderit in voluptate velit esse fugiat nulla pariatur.</p>
+          <h1 key={textoAtual} className="fade-in">{textos[textoAtual]}</h1>
+          <p>Projetamos espaços exclusivos que refletem sua identidade e estilo de vida.</p>
           <a href="#" className="discover-btn">
-            Discover More <span className="arrow">→</span>
+            Saiba Mais <span className="arrow">→</span>
           </a>
         </div>
       </div>
 
       {/* Indicadores de Texto */}
       <div className="slider-dots">
-        {texts.map((_, index) => (
-          <span key={index} className={`dot ${index === currentText ? "active" : ""}`}></span>
+        {textos.map((_, index) => (
+          <span key={index} className={`dot ${index === textoAtual ? "active" : ""}`}></span>
         ))}
       </div>
     </section>

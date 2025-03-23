@@ -1,8 +1,7 @@
-/* Seção principal */
 .progress-section {
   background-color: #0d0d0d;
   color: #ffffff;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   text-align: center;
 }
 
@@ -12,6 +11,7 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1.5px;
+  margin: 0;
 }
 
 .progress-header .progress-title {
@@ -49,23 +49,21 @@
 }
 
 /* Ícone dentro do card */
-/* Ícone dentro do card */
 .progress-icon {
   position: absolute;
   top: 20px;
   right: 20px;
   width: 65px;
   height: 65px;
-  opacity: 0.4; /* Deixa mais visível */
-  filter: brightness(1.5) contrast(1.2); /* Aumenta o brilho e o contraste */
+  opacity: 0.4;
+  filter: brightness(1.5) contrast(1.2);
   transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .progress-card:hover .progress-icon {
-  opacity: 0.6; /* Mais visível no hover */
-  filter: brightness(2) contrast(1.5); /* Mais branco no hover */
+  opacity: 0.6;
+  filter: brightness(2) contrast(1.5);
 }
-
 
 .progress-icon img {
   width: 100%;
@@ -95,7 +93,7 @@
   line-height: 1.5;
 }
 
-/* Responsividade */
+/* Responsividade para telas até 1024px */
 @media (max-width: 1024px) {
   .progress-container {
     flex-direction: column;
@@ -108,6 +106,7 @@
   }
 }
 
+/* Responsividade para telas até 768px */
 @media (max-width: 768px) {
   .progress-header .progress-title {
     font-size: 2rem;
@@ -133,5 +132,43 @@
   .progress-icon {
     width: 50px;
     height: 50px;
+  }
+}
+
+/* Responsividade para telas até 480px */
+@media (max-width: 480px) {
+  .progress-section {
+    padding: 3rem 1rem;
+  }
+
+  .progress-header .progress-title {
+    font-size: 1.8rem;
+  }
+
+  .progress-header .progress-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .progress-card {
+    padding: 1rem;
+  }
+
+  .progress-number {
+    font-size: 1.8rem;
+  }
+
+  .progress-title-text {
+    font-size: 1rem;
+  }
+
+  .progress-description {
+    font-size: 0.8rem;
+  }
+
+  .progress-icon {
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right: 15px;
   }
 }

@@ -8,40 +8,40 @@ import "./Depoimentos.css";
 const depoimentosData = [
   {
     id: 1,
-    name: "Lucas",
-    role: "Happy Customer",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur excepteur sint occaecat cupidatat proident...",
-    image: "/assets/customer1.jpg",
+    nome: "Lucas",
+    cargo: "Cliente Satisfeito",
+    texto: "A equipe da Inovare Home transformou minha casa em um ambiente sofisticado e acolhedor. O design superou minhas expectativas!",
+    imagem: "/assets/customer1.jpg",
   },
   {
     id: 2,
-    name: "Lucas",
-    role: "Happy Customer",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur excepteur sint occaecat cupidatat proident...",
-    image: "/assets/customer2.jpg",
+    nome: "Mariana",
+    cargo: "Cliente Satisfeita",
+    texto: "O projeto de interiores foi incrível! Desde o planejamento até a execução, tudo foi feito com muito profissionalismo e atenção aos detalhes.",
+    imagem: "/assets/customer2.jpg",
   },
   {
     id: 3,
-    name: "Lucas",
-    role: "Happy Customer",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur excepteur sint occaecat cupidatat proident...",
-    image: "/assets/customer3.jpg",
+    nome: "Roberto",
+    cargo: "Cliente Satisfeito",
+    texto: "A renovação do meu espaço ficou impecável. A Inovare Home trouxe soluções inovadoras que realmente valorizaram o ambiente.",
+    imagem: "/assets/customer3.jpg",
   },
   {
     id: 4,
-    name: "Lucas",
-    role: "Happy Customer",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur excepteur sint occaecat cupidatat proident...",
-    image: "/assets/customer3.jpg",
+    nome: "Fernanda",
+    cargo: "Cliente Satisfeita",
+    texto: "Adorei cada detalhe do projeto! O trabalho da Inovare Home combinou funcionalidade e beleza de forma incrível.",
+    imagem: "/assets/customer3.jpg",
   },
 ];
 
 const Depoimentos = () => {
   return (
     <section className="depoimentos">
-      <p className="depoimentos-subtitle">Testimonials</p>
+      <p className="depoimentos-subtitle">Depoimentos</p>
       <h2 className="depoimentos-title">
-        Trusted By Over <span>30,000</span> Worldwide Customers Since <span>1998</span>
+        Confiado por mais de <span>1.000</span> clientes ao redor do mundo desde <span>2000</span>
       </h2>
 
       <Swiper
@@ -59,13 +59,13 @@ const Depoimentos = () => {
           <SwiperSlide key={depoimento.id} className="depoimento-card">
             <div className="depoimento-content">
               <div className="depoimento-header">
-                <img src={depoimento.image} alt={depoimento.name} className="depoimento-image" />
+                <img src={depoimento.imagem} alt={depoimento.nome} className="depoimento-image" />
                 <div className="quote-icon">❝</div>
               </div>
-              <p className="depoimento-text">"{depoimento.text}"</p>
+              <p className="depoimento-text">"{depoimento.texto}"</p>
               <div className="depoimento-info">
-                <h4>{depoimento.name}</h4>
-                <p>{depoimento.role}</p>
+                <h4>{depoimento.nome}</h4>
+                <p>{depoimento.cargo}</p>
                 <div className="stars">★★★★★</div>
               </div>
             </div>

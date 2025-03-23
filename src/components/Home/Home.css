@@ -1,9 +1,10 @@
-/* Fonte */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #131313;
+  margin: 0;
+  padding: 0;
 }
 
 /* Seção Home */
@@ -21,7 +22,7 @@ body {
   background-size: cover;
 }
 
-/* Adicionando Overlay para destacar o texto */
+/* Overlay para escurecer a imagem e destacar o conteúdo */
 .home::before {
   content: "";
   position: absolute;
@@ -29,7 +30,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Escurecendo a imagem */
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -42,9 +43,10 @@ body {
   max-width: 1300px;
   width: 100%;
   z-index: 2;
+  padding: 0 20px;
 }
 
-/* Esquerda - Texto */
+/* Área de Texto */
 .text-content {
   width: 50%;
 }
@@ -54,7 +56,7 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Deixando o texto mais destacado */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .text-content p {
@@ -64,19 +66,7 @@ body {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Linha dourada ao lado das redes sociais */
-.social-icons::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 0;
-  width: 2px;
-  height: 100px;
-  background: linear-gradient(to bottom, #c49a5a, transparent);
-}
-
-
-/* Botão */
+/* Botão "Saiba Mais" */
 .discover-btn {
   display: inline-flex;
   align-items: center;
@@ -87,7 +77,7 @@ body {
   padding: 12px 20px;
   border-radius: 50px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .discover-btn .arrow {
@@ -111,10 +101,20 @@ body {
   z-index: 2;
 }
 
+.social-icons::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, #c49a5a, transparent);
+}
+
 .social-icons a {
   color: #fff;
   font-size: 20px;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .social-icons a:hover {
@@ -138,7 +138,7 @@ body {
   background: #fff;
   border-radius: 50%;
   opacity: 0.5;
-  transition: 0.3s;
+  transition: opacity 0.3s, background 0.3s;
 }
 
 .dot.active {
@@ -146,7 +146,7 @@ body {
   opacity: 1;
 }
 
-/* Responsividade */
+/* Responsividade para telas até 1024px */
 @media (max-width: 1024px) {
   .home {
     padding: 30px;
@@ -170,6 +170,7 @@ body {
   }
 }
 
+/* Responsividade para telas até 768px */
 @media (max-width: 768px) {
   .text-content h1 {
     font-size: 32px;
@@ -186,5 +187,49 @@ body {
 
   .social-icons {
     left: 5px;
+  }
+}
+
+/* Responsividade para telas até 480px */
+@media (max-width: 480px) {
+  .home {
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .discover-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .social-icons {
+    left: 2px;
+    gap: 15px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+  }
+
+  .slider-dots {
+    bottom: 20px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
   }
 }
