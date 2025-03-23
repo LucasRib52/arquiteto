@@ -1,0 +1,88 @@
+/* Container principal */
+.floating-container {
+  position: fixed;
+  bottom: 20px; /* Posição no canto inferior */
+  right: 20px;  /* Posição no canto direito */
+  display: flex;
+  flex-direction: column; /* Itens empilhados verticalmente */
+  gap: 8px; /* Espaçamento entre os itens */
+  z-index: 1000; /* Sempre visível */
+  align-items: flex-end; /* Alinha as mensagens à direita */
+}
+
+/* Cada item (balão de texto + botão) */
+.floating-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Balão de mensagem (texto) */
+.floating-message {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+/* Botão flutuante do WhatsApp */
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botão específico do WhatsApp */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ícone do WhatsApp */
+.whatsapp-icon {
+  font-size: 22px;
+}
+
+/* Responsividade para telas menores */
+@media only screen and (max-width: 768px) {
+  .floating-container {
+    bottom: 15px;
+    right: 15px;
+  }
+  .floating-message {
+    display: none; /* Oculta o texto em telas menores */
+  }
+  .floating-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .floating-container {
+    bottom: 10px;
+    right: 10px;
+  }
+  .floating-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}

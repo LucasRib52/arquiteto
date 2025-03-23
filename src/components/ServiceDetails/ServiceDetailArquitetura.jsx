@@ -23,43 +23,43 @@ export default function ServiceDetail() {
   }, []);
 
   return (
-    <>
+    <div className="service-detail-page">
       <section className="service-detail">
         <div className="service-content">
-          <h1>Service Detail</h1>
+          <h1>Detalhes da Arquitetura - Inovare Home</h1>
           <p>
-            Ruis aute irure dolor in reprehenderit in euota velireu esse fugiat nulla pariatur.
+            Na Inovare Home, transformamos espaços em verdadeiras obras de arte arquitetônicas. Nosso trabalho une inovação, sustentabilidade e design sofisticado para criar ambientes exclusivos, funcionais e acolhedores.
           </p>
           <div className="breadcrumb">
-            <Link to="/">Home</Link> <span>-</span> <span className="active">Service Detail</span>
+            <Link to="/">Início</Link> <span>-</span> <span className="active">Detalhes do Serviço</span>
           </div>
         </div>
         <div className="service-image">
-          <img src={serviceImage} alt="Service Detail" />
+          <img src={serviceImage} alt="Detalhes do Serviço" />
         </div>
       </section>
 
       {/* Nova Seção Abaixo */}
       <section className={`service-feature ${isVisible ? "visible" : ""}`}>
         <div className="feature-image">
-          <img src={featureImage} alt="Luxury Interior Design" />
+          <img src={featureImage} alt="Design de Interiores de Luxo" />
         </div>
         <div className="feature-content">
-          <h2>Homeowners Insurance</h2>
+          <h2>Projeto Residencial Exclusivo</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Desenvolvemos projetos residenciais que refletem o estilo e a personalidade de cada cliente, combinando estética e funcionalidade de maneira inovadora.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur amet blanditiis, quae pariatur eaque impedit ipsam omnis cupiditate voluptate, nihil laudantium. Blanditiis perferendis earum laboriosam rem ducimus nisi perspiciatis animi?
+            Com uma equipe especializada e apaixonada pelo que faz, a Inovare Home se destaca pelo compromisso com a excelência e a criação de ambientes modernos, sustentáveis e sofisticados.
           </p>
           <ul className="feature-list">
-            <li>✅ Quis ipsum suspendisse ultrices gravida</li>
-            <li>🔹 Exceptuer sint occaecat cupidatat</li>
-            <li>✔️ Duis aute irure dolor in voluta facis</li>
-            <li>🎯 Rerum hic tenetur a delectus au occaec</li>
+            <li>✅ Design personalizado e exclusivo</li>
+            <li>🔹 Uso de materiais sustentáveis</li>
+            <li>✔️ Planejamento e execução impecáveis</li>
+            <li>🎯 Foco total na satisfação do cliente</li>
           </ul>
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Services.css";
 
 const servicos = [
@@ -8,6 +9,7 @@ const servicos = [
     icone: "/assets/service-icon1.png",
     imagem: "/assets/architecture.jpg",
     offset: "low",
+    link: "/service-detail-arquitetura",
   },
   {
     titulo: "Design de Interiores",
@@ -15,6 +17,7 @@ const servicos = [
     icone: "/assets/service-icon2.png",
     imagem: "/assets/interior.jpg",
     offset: "high",
+    link: "/service-detail-design",
   },
   {
     titulo: "Renovação",
@@ -22,6 +25,7 @@ const servicos = [
     icone: "/assets/service-icon3.png",
     imagem: "/assets/renovation.jpg",
     offset: "low",
+    link: "/service-detail-renovacao",
   },
   {
     titulo: "Decoração & Arte",
@@ -29,6 +33,7 @@ const servicos = [
     icone: "/assets/service-icon4.png",
     imagem: "/assets/decor.jpg",
     offset: "high",
+    link: "/service-detail-decoracao",
   },
 ];
 
@@ -52,9 +57,9 @@ const Services = () => {
             <div className="service-content">
               <h3>{servico.titulo}</h3>
               <p>{servico.descricao}</p>
-              <a href="/service-detail" className="read-more">
+              <Link to={servico.link} className="read-more">
                 Saiba Mais →
-              </a>
+              </Link>
             </div>
           </div>
         ))}
