@@ -9,9 +9,11 @@ const About = () => {
         <div className="about-image-left">
           <img src="/assets/about1.png" alt="Design de Interiores" />
           <div className="about-badge">
+            <div className="badge-inner">
+              <img src="/assets/inovare_home_logo_transparente.png" alt="Inovare Home" />
+            </div>
           </div>
         </div>
-
         {/* Conteúdo do Texto */}
         <div className="about-content">
           <p className="about-subtitle">Sobre Nós</p>

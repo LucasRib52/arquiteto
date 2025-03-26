@@ -1,241 +1,246 @@
 /* Seção Principal */
 .about-section {
-    background-color: #0d0d0d;
-    background-image: url("/src/assets/pattern-bg.png");
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    padding: 5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #0d0d0d;
+  background-image: url("/src/assets/pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Imagens */
+.about-image-left,
+.about-image-right {
+  flex: 1;
+  max-width: 450px;
+  position: relative;
+}
+
+.about-image-left img,
+.about-image-right img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Badge circular */
+.about-badge {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  background-color: #0d0d0d;  /* Fundo escuro para contrastar com logo dourado */
+  border: 3px solid #facc15;  /* Borda dourada */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  animation: rotateBadge 6s linear infinite; /* Se não quiser rotação, remova esta linha */
+}
+
+/* Animação de rotação (opcional) */
+@keyframes rotateBadge {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  /* Container */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Conteúdo interno do Badge */
+.badge-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.badge-inner img {
+  width: 125px;      /* Aumente ou diminua conforme necessário */
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.badge-inner p {
+  font-size: 14px;  /* Aumente para dar mais destaque */
+  font-weight: bold;
+  color: #facc15;   /* Texto dourado para combinar com a borda */
+  margin: 0;
+}
+
+
+/* Conteúdo */
+.about-content {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-subtitle {
+  color: #facc15;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.about-highlight {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #facc15;
+  margin-top: 1rem;
+}
+
+.highlight-bar {
+  width: 40px;
+  height: 3px;
+  background-color: #facc15;
+  margin-right: 10px;
+}
+
+/* Descrição */
+.about-description {
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Botão Read More */
+.about-button {
+  display: inline-block;
+  color: #facc15;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #facc15;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-button:hover {
+  background-color: #facc15;
+  color: #0d0d0d;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas até 1024px */
+@media (max-width: 1024px) {
   .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  /* Imagens */
+
+  .about-content {
+    text-align: center;
+  }
+
   .about-image-left,
   .about-image-right {
-    flex: 1;
-    max-width: 450px;
-    position: relative;
+    max-width: 100%;
   }
-  
-  .about-image-left img,
-  .about-image-right img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  /* Badge circular */
-  .about-badge {
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    background-color: #facc15;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    animation: rotateBadge 6s linear infinite;
-  }
-  
-  /* Animação de rotação */
-  @keyframes rotateBadge {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* Badge interna */
-  .badge-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .badge-inner img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 5px;
-  }
-  
-  /* Conteúdo */
-  .about-content {
-    flex: 1;
-    max-width: 500px;
-    text-align: left;
-  }
-  
-  .about-subtitle {
-    color: #facc15;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-  }
-  
+
   .about-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 0.5rem;
+    font-size: 2.2rem;
   }
-  
-  .about-highlight {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    color: #facc15;
-    margin-top: 1rem;
-  }
-  
-  .highlight-bar {
-    width: 40px;
-    height: 3px;
-    background-color: #facc15;
-    margin-right: 10px;
-  }
-  
-  /* Descrição */
+
   .about-description {
-    color: #b3b3b3;
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 0.9rem;
   }
-  
-  /* Botão Read More */
+}
+
+/* Para telas até 768px */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-description {
+    font-size: 0.85rem;
+  }
+
   .about-button {
-    display: inline-block;
-    color: #facc15;
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid #facc15;
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
-  
-  .about-button:hover {
-    background-color: #facc15;
-    color: #0d0d0d;
+
+  .about-badge {
+    width: 80px;
+    height: 80px;
+    top: -20px;
+    left: -20px;
   }
-  
-  /* Media Queries para Responsividade */
-  
-  /* Para telas até 1024px */
-  @media (max-width: 1024px) {
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-content {
-      text-align: center;
-    }
-  
-    .about-image-left,
-    .about-image-right {
-      max-width: 100%;
-    }
-  
-    .about-title {
-      font-size: 2.2rem;
-    }
-  
-    .about-description {
-      font-size: 0.9rem;
-    }
+
+  .badge-inner {
+    font-size: 10px;
   }
-  
-  /* Para telas até 768px */
-  @media (max-width: 768px) {
-    .about-section {
-      padding: 3rem 1rem;
-    }
-  
-    .about-title {
-      font-size: 2rem;
-    }
-  
-    .about-subtitle {
-      font-size: 1rem;
-    }
-  
-    .about-description {
-      font-size: 0.85rem;
-    }
-  
-    .about-button {
-      padding: 0.7rem 1.2rem;
-      font-size: 0.9rem;
-    }
-  
-    .about-badge {
-      width: 80px;
-      height: 80px;
-      top: -20px;
-      left: -20px;
-    }
-  
-    .badge-inner {
-      font-size: 10px;
-    }
+}
+
+/* Para telas até 480px */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 1rem;
   }
-  
-  /* Para telas até 480px */
-  @media (max-width: 480px) {
-    .about-section {
-      padding: 2rem 1rem;
-    }
-  
-    .about-container {
-      gap: 1rem;
-    }
-  
-    .about-title {
-      font-size: 1.8rem;
-    }
-  
-    .about-subtitle {
-      font-size: 0.9rem;
-    }
-  
-    .highlight-bar {
-      width: 30px;
-    }
-  
-    .about-description {
-      font-size: 0.8rem;
-    }
-  
-    .about-button {
-      padding: 0.6rem 1rem;
-      font-size: 0.8rem;
-    }
-  
-    .about-image-left,
-    .about-image-right {
-      max-width: 100%;
-    }
+
+  .about-container {
+    gap: 1rem;
   }
-  
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .highlight-bar {
+    width: 30px;
+  }
+
+  .about-description {
+    font-size: 0.8rem;
+  }
+
+  .about-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .about-image-left,
+  .about-image-right {
+    max-width: 100%;
+  }
+}
