@@ -72,17 +72,28 @@
 }
 
 .badge-inner img {
-  width: 125px;      /* Aumente ou diminua conforme necessário */
+  width: 125px;      /* Ajuste conforme necessário */
   height: auto;
   margin-bottom: 5px;
 }
 
-.badge-inner p {
-  font-size: 14px;  /* Aumente para dar mais destaque */
-  font-weight: bold;
-  color: #facc15;   /* Texto dourado para combinar com a borda */
-  margin: 0;
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+  .about-badge {
+    top: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .badge-inner img {
+    width: 100%;       /* Ajusta a imagem proporcionalmente ao container */
+    max-width: 100px;  /* Limita o tamanho máximo para manter a proporção */
+  }
 }
+
+
+
 
 
 /* Conteúdo */
