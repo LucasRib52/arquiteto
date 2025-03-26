@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="footer-text">
             Quer criar algo <br /> incrível conosco?
           </p>
-          <a href="#contact" className="footer-button">
+          <a href="/contact" className="footer-button">
             Entre em Contato <span className="arrow">➜</span>
           </a>
         </div>
@@ -45,15 +45,17 @@ const Footer = () => {
 
         {/* Redes sociais */}
         <div className="footer-social">
-          <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-          <a href="#" aria-label="Twitter"><FaTwitter /></a>
-          <a href="#" aria-label="Instagram"><FaInstagram /></a>
-          <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
+          <a href="https://www.instagram.com/inovarehomedesing/" aria-label="Instagram"><FaInstagram /></a>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>Copyright © 2025 Inovare Home. Todos os direitos reservados.</p>
+        <p>
+          Copyright © 2025 Inovare Home. Todos os direitos reservados.
+        </p>
+        <p className="developer-signature">
+          Desenvolvido com 💙 por <a href="https://www.devlucas.tech" target="_blank" rel="noopener noreferrer">Lucas Cardoso</a>
+        </p>
       </div>
     </footer>
   );

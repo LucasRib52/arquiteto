@@ -28,7 +28,7 @@ function ContactPage() {
                     <div className="contact-card">
                         <img src="/assets/contact-locationicon.png" alt="Localização" />
                         <h4>Endereço:</h4>
-                        <p>Level 7/180 Flinders St, Melbourne VIC 3000, Austrália</p>
+                        <p>EUA</p>
                     </div>
 
                     {/* E-mail */}
@@ -78,19 +78,6 @@ function ContactPage() {
                         </button>
                     </form>
                 </div>
-            </div>
-
-            {/* Seção do Mapa */}
-            <div className="map-container">
-                <iframe
-                    title="Google Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3522.5248358540327!2d-81.47993632444956!3d28.38684407545862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77e2d9afd3d77%3A0xc57ea53b1e126359!2sInternational%20Dr%2C%20Orlando%2C%20FL%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1708212500000!5m2!1spt-BR!2sbr"
-                    width="100%"
-                    height="400"
-                    style={{ border: "0", borderRadius: "10px" }}
-                    allowFullScreen=""
-                    loading="lazy"
-                ></iframe>
             </div>
         </div>
     );

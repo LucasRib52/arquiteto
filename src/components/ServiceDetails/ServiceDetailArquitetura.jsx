@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ServiceDetail.css";
-import serviceImage from "/assets/service-bannerimage.jpg";
-import featureImage from "/assets/background.jpg"; // Imagem da nova seção
+import serviceImage from "/assets/salas/sala3.jpeg";
+import featureImage from "/assets/salas/sala5.jpeg"; // Imagem da nova seção
 
 export default function ServiceDetail() {
   const [isVisible, setIsVisible] = useState(false);

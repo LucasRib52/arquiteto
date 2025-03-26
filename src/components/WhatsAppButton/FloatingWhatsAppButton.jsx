@@ -10,7 +10,7 @@ const FloatingWhatsAppButton = () => {
            Fale conosco no WhatsApp!
         </div>
         <a
-          href="https://api.whatsapp.com/send?phone=5531984454915"
+          href="https://w.app/9etypf"
           target="_blank"
           rel="noopener noreferrer"
           className="floating-btn whatsapp-btn"

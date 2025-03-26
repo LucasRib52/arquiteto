@@ -9,10 +9,6 @@ const About = () => {
         <div className="about-image-left">
           <img src="/assets/about1.png" alt="Design de Interiores" />
           <div className="about-badge">
-            <div className="badge-inner">
-              <img src="/assets/inovare_home_logo_transparente.png" alt="Inovare Home" />
-              <p>INOVARE HOME</p>
-            </div>
           </div>
         </div>
 
@@ -27,7 +23,7 @@ const About = () => {
             Na Inovare Home, combinamos criatividade, inovação e sofisticação para transformar ambientes.
             Nossa missão é projetar espaços que proporcionam beleza, conforto e funcionalidade, tornando cada detalhe uma expressão do seu estilo.
           </p>
-          <a href="#" className="about-button">
+          <a href="/about" className="about-button">
             Saiba Mais →
           </a>
         </div>

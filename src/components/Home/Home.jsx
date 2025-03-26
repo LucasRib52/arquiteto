@@ -25,10 +25,7 @@ export default function Home() {
       
       {/* Ícones de Redes Sociais */}
       <div className="social-icons">
-        <a href="#"><FaFacebookF /></a>
-        <a href="#"><FaTwitter /></a>
-        <a href="#"><FaInstagram /></a>
-        <a href="#"><FaLinkedinIn /></a>
+        <a href="https://www.instagram.com/inovarehomedesing/"><FaInstagram /></a>
       </div>
 
       <div className="container">
@@ -36,7 +33,7 @@ export default function Home() {
         <div className="text-content">
           <h1 key={textoAtual} className="fade-in">{textos[textoAtual]}</h1>
           <p>Projetamos espaços exclusivos que refletem sua identidade e estilo de vida.</p>
-          <a href="#" className="discover-btn">
+          <a href="/portfolio" className="discover-btn">
             Saiba Mais <span className="arrow">→</span>
           </a>
         </div>

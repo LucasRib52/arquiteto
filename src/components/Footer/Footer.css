@@ -154,6 +154,24 @@
   color: #bbb;
 }
 
+.footer-bottom .developer-signature {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer-bottom .developer-signature a {
+  color: #00aeef;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom .developer-signature a:hover {
+  color: #8a00e6;
+}
+
+
 /* Responsividade */
 @media (max-width: 1024px) {
   .footer-container {

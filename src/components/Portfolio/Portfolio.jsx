@@ -32,7 +32,7 @@ const Portfolio = () => {
           soluções arquitetônicas modernas, inovadoras e de alta qualidade. Nosso compromisso com a 
           excelência e atenção aos detalhes nos destacam no setor.
         </p>
-        <a href="#about" className="discover-btn">
+        <a href="/portfolio" className="discover-btn">
           Saiba Mais →
         </a>
       </div>

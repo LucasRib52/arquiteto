@@ -80,7 +80,7 @@ export default function Header() {
           </li>
           <li>
             {/* Botão de Contato dentro do menu mobile */}
-            <Link to="/contact" className="contact-link" onClick={closeMobileMenu}>
+            <Link to="/Contact" className="contact-link" onClick={closeMobileMenu}>
               Contate-nos
             </Link>
           </li>
